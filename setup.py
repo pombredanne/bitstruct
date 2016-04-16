@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
 from setuptools import setup
+import bitstruct
 
 setup(name='bitstruct',
-      version='2.1.2',
+      version=bitstruct.__version__,
       description=('This module performs conversions between Python values '
                    'and C bit field structs represented as Python '
-                   'bytearrays.'),
+                   'byte strings.'),
       long_description=open('README.rst', 'r').read(),
       author='Erik Moqvist, Ilya Petukhov',
       author_email='erik.moqvist@gmail.com',
